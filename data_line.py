@@ -426,8 +426,8 @@ def preprocess_overlap(file_path, w, h, rng):
 def main(config):
     prepare_dirs_and_logger(config)
     batch_manager = BatchManager(config)
-    # preprocess_path('data/line/train/0.svg_pre', 64, 64, batch_manager.rng)
-    # preprocess_overlap('data/line/train/0.svg_pre', 64, 64, batch_manager.rng)
+    preprocess_path('data/line/train/0.svg_pre', 64, 64, batch_manager.rng)
+    preprocess_overlap('data/line/train/0.svg_pre', 64, 64, batch_manager.rng)
 
     # thread test
     sess_config = tf.ConfigProto()
